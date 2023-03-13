@@ -1,6 +1,6 @@
 # she_shield
 
-A new Flutter project.
+A new Flutter project "New age women safety app" which is meant for the kavach hackathon 2023.
 
 ## Getting Started
 
