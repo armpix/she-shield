@@ -1,9 +1,20 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:she_shield/splash.dart';
+import 'phone.dart';
+import 'otp.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MaterialApp(
+    initialRoute: 'phone',
+    debugShowCheckedModeBanner: false,
+    routes: {
+      'phone': ((context) => myphone()),
+      'otp':(context) => myotp(),
+      
+    },
+    
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -53,8 +64,10 @@ class MyApp extends StatelessWidget {
   }
 }
 
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
+  
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
