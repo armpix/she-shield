@@ -33,6 +33,7 @@ dependencies:
   animated_splash_screen: ^1.3.0
   flutter_native_splash: ^2.2.19
   flutter_launcher_icons: "^0.12.0"
+  pinput: ^2.2.31
 
 flutter_icons:
   android: "launcher_icon"
@@ -40,14 +41,14 @@ flutter_icons:
   image_path: "C:/Users/Armaan/Desktop/Flutter projects/she_shield/assests/logo.png"
   min_sdk_android: 21 # android min sdk min:16, default 21
   web:
-    generate: false
+    generate: true
     image_path: "C:/Users/Armaan/Desktop/Flutter projects/she_shield/assests/logo.png"
     background_color: "#hexcode"
     theme_color: "#hexcode"
   windows:
     generate: true
     image_path: "C:/Users/Armaan/Desktop/Flutter projects/she_shield/assests/logo.png"
-    icon_size: 48 # min:48, max:256, default: 48
+    icon_size: 200 # min:48, max:256, default: 48
   macos:
     generate: true
     image_path: "C:/Users/Armaan/Desktop/Flutter projects/she_shield/assests/logo.png"
@@ -57,17 +58,21 @@ flutter_native_splash:
   image: assests\logo.png
   android: true
   ios: true
-  android_gravity: centre
+  android_gravity: bottom
   ios_gravity: centre
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  pinput: ^2.2.31
+  pin_code_fields: ^7.4.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+    
+    
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -91,7 +96,7 @@ flutter:
   assets:
 
      - assests/pin.png
-  #   - images/a_dot_ham.jpeg
+     - assests/user.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

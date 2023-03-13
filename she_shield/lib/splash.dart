@@ -13,7 +13,7 @@ class _splashState extends State<splash> {
   @override
   void initState() {
     super.initState();
-    //_navigatetohome();
+    _navigatetohome();
 
   }
 
@@ -29,7 +29,7 @@ class _splashState extends State<splash> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(height: 90, width: 90, color: Colors.deepOrangeAccent,),
+            Container(height: 190, width: 90, color: Colors.deepOrangeAccent,),
             Container(
               child: Text(
                 'SHE SHIELD',
