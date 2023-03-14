@@ -1,5 +1,8 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:she_shield/home.dart';
+import 'package:she_shield/login.dart';
+import 'package:she_shield/login.dart';
 import 'phone.dart';
 import 'otp.dart';
 
@@ -10,6 +13,8 @@ void main() {
     routes: {
       'phone': ((context) => myphone()),
       'otp':(context) => myotp(),
+      'login':(context) => mylogin(),
+      'home':(context) => myhome(),
       
     },
     

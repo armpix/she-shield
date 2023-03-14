@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:pinput/pinput.dart';
+import 'package:she_shield/home.dart';
 
 class myotp extends StatefulWidget {
   const myotp({Key? key}) : super(key: key);
@@ -105,7 +106,9 @@ class _myotpState extends State<myotp> {
                         primary: Colors.yellow.shade700,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10))),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, "login");
+                    },
                     child: Text("Verify Phone Number")),
               ),
               Row(
