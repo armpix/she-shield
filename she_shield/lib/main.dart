@@ -1,10 +1,13 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:she_shield/Emergency_contacts.dart';
+import 'package:she_shield/Profile.dart';
+import 'package:she_shield/SOS.dart';
 import 'package:she_shield/home.dart';
 import 'package:she_shield/login.dart';
-import 'package:she_shield/login.dart';
-import 'phone.dart';
+
 import 'otp.dart';
+import 'phone.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -12,12 +15,13 @@ void main() {
     debugShowCheckedModeBanner: false,
     routes: {
       'phone': ((context) => myphone()),
-      'otp':(context) => myotp(),
-      'login':(context) => mylogin(),
-      'home':(context) => myhome(),
-      
+      'otp': (context) => myotp(),
+      'login': (context) => mylogin(),
+      'home': (context) => myhome(),
+      'sos': (context) => SOSPage(),
+      'emergency': (context) => EmergencyContacts(),
+      'profile': (context) => ProfilePage(),
     },
-    
   ));
 }
 
@@ -43,35 +47,32 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: AnimatedSplashScreen(
-        splash: Icons.shield,
+          splash: Icons.shield,
           duration: 3000,
-            splashTransition: SplashTransition.fadeTransition,
-               backgroundColor: Colors.white,
-                nextScreen: MyHomePage(title: 'she SHIELD')),
-            
-        //Center(
-        //child: Column(
-          //mainAxisAlignment: MainAxisAlignment.center,
-          //children: [
-            //Container(height: 90, width: 90, color: Colors.deepOrangeAccent,),
-            //Container(
-              //child: Text(
-                //'SHE SHIELD',
-                //style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold,
-              //)),
-            //), 
-          //],
-        //),
-      //), 
-      
+          splashTransition: SplashTransition.fadeTransition,
+          backgroundColor: Colors.white,
+          nextScreen: MyHomePage(title: 'she SHIELD')),
+
+      //Center(
+      //child: Column(
+      //mainAxisAlignment: MainAxisAlignment.center,
+      //children: [
+      //Container(height: 90, width: 90, color: Colors.deepOrangeAccent,),
+      //Container(
+      //child: Text(
+      //'SHE SHIELD',
+      //style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold,
+      //)),
+      //),
+      //],
+      //),
+      //),
     );
   }
 }
 
-
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
-  
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
