@@ -32,12 +32,12 @@ class _SafestRouteState extends State<SafestRoute> {
                     ),
                   ),
                   SizedBox(
-                    height: 45,
+                    height: 25,
                   ),
                   Container(
                     padding: const EdgeInsets.all(19.0),
                     child: Image(
-                      image: AssetImage('assests/Placeholder.jpg'),
+                      image: AssetImage('assests/map.jpg'),
                     ),
                   ),
                   SizedBox(

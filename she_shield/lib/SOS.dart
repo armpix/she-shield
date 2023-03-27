@@ -67,7 +67,7 @@ class SOSPage extends StatelessWidget {
                             'Nearby Shields',
                             textAlign: TextAlign.center,
                             style: GoogleFonts.poppins(
-                              fontSize: 20.0,
+                              fontSize: 15.0,
                               fontWeight: FontWeight.w600,
                               color: Color(0xfffff9f9),
                             ),
@@ -82,12 +82,14 @@ class SOSPage extends StatelessWidget {
                           Image(
                             image: AssetImage('assests/police_station.png'),
                           ),
-                          Text(
-                            'Nearby Police Stations',
-                            style: GoogleFonts.poppins(
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.w600,
-                              color: Color(0xfffff9f9),
+                          Center(
+                            child: Text(
+                              'Nearby Police \nStations',
+                              style: GoogleFonts.poppins(
+                                fontSize: 15.0,
+                                fontWeight: FontWeight.w600,
+                                color: Color(0xfffff9f9),
+                              ),
                             ),
                           ),
                         ],
