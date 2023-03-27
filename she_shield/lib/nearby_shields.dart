@@ -32,7 +32,7 @@ class _nearby_shieldsState extends State<nearby_shields> {
                     ),
                   ),
                   SizedBox(
-                    height: 45,
+                    height: 30,
                   ),
                   Container(
                     padding: const EdgeInsets.all(19.0),
@@ -65,7 +65,7 @@ class _nearby_shieldsState extends State<nearby_shields> {
                         child: Text(
                           'Aisha',
                           style: GoogleFonts.poppins(
-                            fontSize: 26,
+                            fontSize: 21,
                             fontWeight: FontWeight.w700,
                             height: 1.5,
                             letterSpacing: -0.3000000119,
@@ -105,7 +105,7 @@ class _nearby_shieldsState extends State<nearby_shields> {
                         child: Text(
                           'Saumya',
                           style: GoogleFonts.poppins(
-                            fontSize: 23,
+                            fontSize: 21,
                             fontWeight: FontWeight.w700,
                             height: 1.5,
                             letterSpacing: -0.3000000119,
