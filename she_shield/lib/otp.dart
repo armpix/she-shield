@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:pinput/pinput.dart';
-import 'package:she_shield/home.dart';
 
 class myotp extends StatefulWidget {
   const myotp({Key? key}) : super(key: key);
@@ -32,8 +30,7 @@ class _myotpState extends State<myotp> {
     );
 
     final submittedPinTheme = defaultPinTheme.copyWith(
-      
-       decoration: defaultPinTheme.decoration?.copyWith(
+      decoration: defaultPinTheme.decoration?.copyWith(
         color: Color.fromRGBO(234, 239, 243, 1),
       ),
     );
@@ -62,7 +59,6 @@ class _myotpState extends State<myotp> {
             children: [
               Image.asset(
                 'assests/user.png',
-
                 width: 150,
                 height: 150,
               ),
@@ -90,7 +86,7 @@ class _myotpState extends State<myotp> {
                 length: 4,
                 // defaultPinTheme: defaultPinTheme,
                 // focusedPinTheme: focusedPinTheme,
-                 submittedPinTheme: submittedPinTheme,
+                submittedPinTheme: submittedPinTheme,
 
                 showCursor: true,
                 onCompleted: (pin) => print(pin),
@@ -103,7 +99,7 @@ class _myotpState extends State<myotp> {
                 height: 45,
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        primary: Colors.yellow.shade700,
+                        primary: Color(0xFF394A73),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10))),
                     onPressed: () {
@@ -122,9 +118,8 @@ class _myotpState extends State<myotp> {
                         );
                       },
                       child: Text(
-                      
                         "Edit your Phone Number?",
-                        style: TextStyle(color: Colors.deepOrangeAccent),
+                        style: TextStyle(color: Color(0xFF394A73)),
                       ))
                 ],
               )

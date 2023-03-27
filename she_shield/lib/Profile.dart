@@ -28,7 +28,10 @@ class _ProfilePageState extends State<ProfilePage> {
                   children: [
                     Text(
                       'Profile',
-                      style: TextStyle(color: Colors.black),
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
                     ),
                     Text(
                       'Your Profile Customization',

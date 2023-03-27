@@ -8,12 +8,11 @@ class myphone extends StatefulWidget {
 }
 
 class _State extends State<myphone> {
-
-  TextEditingController countrycode= TextEditingController();
+  TextEditingController countrycode = TextEditingController();
   @override
   void initState() {
     // TODO: implement initState
-    countrycode.text="+91";
+    countrycode.text = "+91";
     super.initState();
   }
 
@@ -99,15 +98,19 @@ class _State extends State<myphone> {
                 height: 45,
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        primary: Colors.yellow.shade700,
+                        primary: Color(0xFF394A73),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10))),
                     onPressed: () {
                       Navigator.pushNamed(context, "otp");
                     },
-                    child: Text("Send OTP", style: 
-                    TextStyle(fontSize: 15, fontWeight: FontWeight.w700, color: Colors.black54),)
-                    ),
+                    child: Text(
+                      "Send OTP",
+                      style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.white),
+                    )),
               )
             ],
           ),
@@ -115,4 +118,4 @@ class _State extends State<myphone> {
       ),
     );
   }
-} 
+}
